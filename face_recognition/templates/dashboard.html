@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,5 +8,125 @@
 <body>
     <a href="add-student">Add Student</a>
     <a href="add-faculty">Add Faculty</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Container */
+        .dashboard-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .dashboard-title {
+            color: #333;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        .dashboard-title span {
+            color: #4e54c8; /* Accent color */
+        }
+
+        /* Button Container */
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Stylish Link/Button */
+        .dashboard-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Specific Colors for Buttons */
+        .btn-student {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+        }
+
+        .btn-faculty {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 117, 140, 0.3);
+        }
+
+        /* Hover Effects */
+        .dashboard-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .dashboard-btn:active {
+            transform: translateY(1px);
+        }
+
+        .dashboard-btn i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1 class="dashboard-title">Welcome <span>Admin</span></h1>
+        
+        <div class="action-buttons">
+            <a href="add-student" class="dashboard-btn btn-student">
+                <i class="fas fa-user-graduate"></i>
+                Add Student
+            </a>
+            
+            <a href="add-faculty" class="dashboard-btn btn-faculty">
+                <i class="fas fa-chalkboard-teacher"></i>
+                Add Faculty
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
